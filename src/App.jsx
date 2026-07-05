@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Navbar } from './Components/Navbar/Navbar'
 import { Homepage } from './Components/Home/Homepage'
 import { Create } from './Components/Create/Create'
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
       <Routes>
         <Route element={<Navbar></Navbar>}>
          <Route path='/' element={<Homepage></Homepage>}></Route>
@@ -22,8 +22,8 @@ function App() {
          <Route path='/about' element={<About></About>}></Route>
         </Route>
       </Routes>
-      <Footer />
-      </HashRouter>
+      <Footer/>
+      </BrowserRouter>
       
     </>
     
