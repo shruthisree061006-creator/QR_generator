@@ -1,0 +1,145 @@
+.container {
+  width: 100%;
+  background: #030712;
+  color: white;
+}
+
+.homepage {
+  width: 100%;
+}
+
+.homepage1 {
+  min-height: 85vh;
+  background: linear-gradient(135deg, #020617, #11113a, #3b0764);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+#heroimg {
+  width: 85%;
+  max-width: 950px;
+  border-radius: 25px;
+  box-shadow: 0 0 35px rgba(124, 58, 237, 0.5);
+}
+
+.herobtn {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.herobtn button {
+  border: none;
+  border-radius: 12px;
+  background: #7c3aed;
+  padding: 14px 28px;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(124, 58, 237, 0.6);
+}
+
+.herobtn button a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.herobtn button:hover {
+  background: #a855f7;
+}
+
+.how-section {
+  padding: 60px 30px;
+  text-align: center;
+  background: #05051f;
+}
+
+.how-section h2 {
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  width: 230px;
+  background: #11113a;
+  padding: 28px 18px;
+  border-radius: 20px;
+  border: 1px solid #7c3aed;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.25);
+}
+
+.step-card span {
+  background: #7c3aed;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.step-card h3 {
+  margin-top: 20px;
+  font-size: 21px;
+}
+
+.step-card p {
+  margin-top: 10px;
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .homepage1 {
+    min-height: 75vh;
+    padding: 35px 20px;
+  }
+
+  #heroimg {
+    width: 90%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .homepage1 {
+    min-height: 70vh;
+    padding: 30px 15px;
+  }
+
+  #heroimg {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .herobtn {
+    gap: 15px;
+  }
+
+  .herobtn button {
+    padding: 12px 18px;
+  }
+
+  .herobtn button a {
+    font-size: 14px;
+  }
+
+  .how-section h2 {
+    font-size: 28px;
+  }
+
+  .step-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}

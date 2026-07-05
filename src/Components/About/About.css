@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-container {
+  width: 100%;
+  min-height: 85vh;
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #11113a,
+    #3b0764
+  );
+
+  color: white;
+  padding: 60px 70px;
+}
+
+.about-page {
+  width: 100%;
+}
+
+.about-intro {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-intro h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.about-intro p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+
+/* FEATURES */
+
+.about-features {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.about-features h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.feature-card {
+  width: 300px;
+  min-height: 160px;
+
+  background: #09091f;
+
+  border: 1px solid #7c3aed;
+  border-radius: 18px;
+
+  padding: 25px;
+
+  box-shadow:
+    0 0 20px rgba(124, 58, 237, 0.25);
+
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 0 30px rgba(168, 85, 247, 0.5);
+}
+
+.feature-card h3 {
+  color: #a855f7;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* FUTURE SECTION */
+
+.future-section {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.future-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.future-box {
+  max-width: 850px;
+  margin: auto;
+
+  background: #09091f;
+
+  border: 1px solid #7c3aed;
+  border-radius: 18px;
+
+  padding: 30px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.future-box p {
+  background: #18184a;
+
+  padding: 12px 20px;
+
+  border-radius: 10px;
+
+  color: #c4b5fd;
+
+  font-weight: bold;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+  .about-container {
+    padding: 50px 35px;
+  }
+
+  .about-intro h1 {
+    font-size: 35px;
+  }
+
+  .feature-card {
+    width: 280px;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .about-container {
+    padding: 40px 15px;
+  }
+
+  .about-intro h1 {
+    font-size: 30px;
+  }
+
+  .about-intro p {
+    font-size: 15px;
+  }
+
+  .about-features h2,
+  .future-section h2 {
+    font-size: 27px;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .future-box {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .future-box p {
+    width: 100%;
+  }
+}
